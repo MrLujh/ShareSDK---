@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Iai-WA-Yqs">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--分享-->
+        <scene sceneID="NhX-sx-eue">
+            <objects>
+                <viewController id="exy-He-fbx" customClass="ShareViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JqP-CL-WuU"/>
+                        <viewControllerLayoutGuide type="bottom" id="9hB-MR-Rcn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HLJ-e0-lOp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tqV-5M-sBb">
+                                <rect key="frame" x="150" y="136" width="76" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="微信"/>
+                                <connections>
+                                    <action selector="shareToWeixin:" destination="exy-He-fbx" eventType="touchUpInside" id="kK9-Vw-ycd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n8x-vz-Bde">
+                                <rect key="frame" x="150" y="260" width="76" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="QQ"/>
+                                <connections>
+                                    <action selector="shareToQQ:" destination="exy-He-fbx" eventType="touchUpInside" id="Ad0-cY-TMD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k95-Te-WYZ">
+                                <rect key="frame" x="150" y="399" width="76" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="微博"/>
+                                <connections>
+                                    <action selector="shareToSina:" destination="exy-He-fbx" eventType="touchUpInside" id="i2h-wk-J7r"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94234213359475383" green="1" blue="0.28792528250869298" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="分享" id="cfB-sH-7v6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kay-Rs-VCn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32" y="-48"/>
+        </scene>
+        <!--微信支付-->
+        <scene sceneID="NeZ-qM-zsB">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HO1-ga-wp3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="Ths-fe-7Oe" customClass="PayViewController" sceneMemberID="viewController">
+                    <button key="view" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="B30-yg-9RN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.15521032315577532" green="1" blue="0.97085151751132948" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <state key="normal" title="立即购买"/>
+                        <connections>
+                            <action selector="goToBuy:" destination="Ths-fe-7Oe" eventType="touchUpInside" id="NiF-5b-1uq"/>
+                        </connections>
+                    </button>
+                    <tabBarItem key="tabBarItem" title="微信支付" id="Gk6-al-RoM"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="32" y="-705"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="un7-AZ-Ds1">
+            <objects>
+                <tabBarController id="Iai-WA-Yqs" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="7qO-go-krE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Ths-fe-7Oe" kind="relationship" relationship="viewControllers" id="EUZ-nq-Wcu"/>
+                        <segue destination="exy-He-fbx" kind="relationship" relationship="viewControllers" id="Z3c-yQ-Qzr"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NrR-HC-HPj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-921" y="-378"/>
+        </scene>
+    </scenes>
+</document>

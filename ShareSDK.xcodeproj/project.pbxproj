@@ -1,0 +1,689 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2E07DCCF1ECD33B70087A9DC /* WXAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E07DCCE1ECD33B70087A9DC /* WXAPIManager.m */; };
+		2E29DF4E1E95F07D000B9B9B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E29DF4D1E95F07D000B9B9B /* main.m */; };
+		2E29DF571E95F07D000B9B9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E29DF551E95F07D000B9B9B /* Main.storyboard */; };
+		2E29DF591E95F07D000B9B9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E29DF581E95F07D000B9B9B /* Assets.xcassets */; };
+		2E29DF5C1E95F07D000B9B9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E29DF5A1E95F07D000B9B9B /* LaunchScreen.storyboard */; };
+		2E29DF671E95F07D000B9B9B /* ShareSDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E29DF661E95F07D000B9B9B /* ShareSDKTests.m */; };
+		2E29DF721E95F07D000B9B9B /* ShareSDKUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E29DF711E95F07D000B9B9B /* ShareSDKUITests.m */; };
+		2E29DF9E1E961BC9000B9B9B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E29DF9D1E961BC9000B9B9B /* AppDelegate.m */; };
+		2E29DFA51E961CB9000B9B9B /* NSDictionary+Json.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E29DFA31E961CB9000B9B9B /* NSDictionary+Json.m */; };
+		2E29DFA61E961D05000B9B9B /* CESHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E29DFA11E961CB9000B9B9B /* CESHttpTool.m */; };
+		2E9AB2E81E9DC8C80054E9C2 /* PayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9AB2E71E9DC8C80054E9C2 /* PayViewController.m */; };
+		2E9AB2EB1E9DC8E20054E9C2 /* ShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9AB2EA1E9DC8E20054E9C2 /* ShareViewController.m */; };
+		E42E7227A1452E00ABE499BD /* libPods-ShareSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 698392BC37345B67B6F6FB6F /* libPods-ShareSDK.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2E29DF631E95F07D000B9B9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E29DF411E95F07D000B9B9B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E29DF481E95F07D000B9B9B;
+			remoteInfo = ShareSDK;
+		};
+		2E29DF6E1E95F07D000B9B9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E29DF411E95F07D000B9B9B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E29DF481E95F07D000B9B9B;
+			remoteInfo = ShareSDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2E07DCCD1ECD33B70087A9DC /* WXAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXAPIManager.h; sourceTree = "<group>"; };
+		2E07DCCE1ECD33B70087A9DC /* WXAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXAPIManager.m; sourceTree = "<group>"; };
+		2E29DF491E95F07D000B9B9B /* ShareSDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShareSDK.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E29DF4D1E95F07D000B9B9B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2E29DF561E95F07D000B9B9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2E29DF581E95F07D000B9B9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2E29DF5B1E95F07D000B9B9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2E29DF5D1E95F07D000B9B9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E29DF621E95F07D000B9B9B /* ShareSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShareSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E29DF661E95F07D000B9B9B /* ShareSDKTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShareSDKTests.m; sourceTree = "<group>"; };
+		2E29DF681E95F07D000B9B9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E29DF6D1E95F07D000B9B9B /* ShareSDKUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShareSDKUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E29DF711E95F07D000B9B9B /* ShareSDKUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShareSDKUITests.m; sourceTree = "<group>"; };
+		2E29DF731E95F07D000B9B9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E29DF9C1E961BC9000B9B9B /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2E29DF9D1E961BC9000B9B9B /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2E29DFA01E961CB9000B9B9B /* CESHttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CESHttpTool.h; sourceTree = "<group>"; };
+		2E29DFA11E961CB9000B9B9B /* CESHttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CESHttpTool.m; sourceTree = "<group>"; };
+		2E29DFA21E961CB9000B9B9B /* NSDictionary+Json.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Json.h"; sourceTree = "<group>"; };
+		2E29DFA31E961CB9000B9B9B /* NSDictionary+Json.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Json.m"; sourceTree = "<group>"; };
+		2E29DFAA1E961FF5000B9B9B /* ShareSDK.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareSDK.pch; sourceTree = "<group>"; };
+		2E9AB2E61E9DC8C80054E9C2 /* PayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayViewController.h; sourceTree = "<group>"; };
+		2E9AB2E71E9DC8C80054E9C2 /* PayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PayViewController.m; sourceTree = "<group>"; };
+		2E9AB2E91E9DC8E20054E9C2 /* ShareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareViewController.h; sourceTree = "<group>"; };
+		2E9AB2EA1E9DC8E20054E9C2 /* ShareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareViewController.m; sourceTree = "<group>"; };
+		698392BC37345B67B6F6FB6F /* libPods-ShareSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ShareSDK.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		90C51B344583CDF80E498FB0 /* Pods-ShareSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareSDK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShareSDK/Pods-ShareSDK.debug.xcconfig"; sourceTree = "<group>"; };
+		A516C737A0B7C3E9AB59C126 /* Pods-ShareSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareSDK.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShareSDK/Pods-ShareSDK.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2E29DF461E95F07D000B9B9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E42E7227A1452E00ABE499BD /* libPods-ShareSDK.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E29DF5F1E95F07D000B9B9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E29DF6A1E95F07D000B9B9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2E07DCC91ECD32F30087A9DC /* WXApiManager */ = {
+			isa = PBXGroup;
+			children = (
+				2E07DCCD1ECD33B70087A9DC /* WXAPIManager.h */,
+				2E07DCCE1ECD33B70087A9DC /* WXAPIManager.m */,
+			);
+			path = WXApiManager;
+			sourceTree = "<group>";
+		};
+		2E29DF401E95F07D000B9B9B = {
+			isa = PBXGroup;
+			children = (
+				2E29DF4B1E95F07D000B9B9B /* ShareSDK */,
+				2E29DF651E95F07D000B9B9B /* ShareSDKTests */,
+				2E29DF701E95F07D000B9B9B /* ShareSDKUITests */,
+				2E29DF4A1E95F07D000B9B9B /* Products */,
+				6F2A23D389029D9E6EEA2B2A /* Pods */,
+				3067F59A7461C1A348619C7B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2E29DF4A1E95F07D000B9B9B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2E29DF491E95F07D000B9B9B /* ShareSDK.app */,
+				2E29DF621E95F07D000B9B9B /* ShareSDKTests.xctest */,
+				2E29DF6D1E95F07D000B9B9B /* ShareSDKUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2E29DF4B1E95F07D000B9B9B /* ShareSDK */ = {
+			isa = PBXGroup;
+			children = (
+				2E29DFA91E961FCF000B9B9B /* PCH */,
+				2E29DF9F1E961CB9000B9B9B /* Http */,
+				2E07DCC91ECD32F30087A9DC /* WXApiManager */,
+				2E29DF9B1E961BC9000B9B9B /* AppDelegate */,
+				2E29DF961E961AE0000B9B9B /* ViewController */,
+				2E29DF4C1E95F07D000B9B9B /* Supporting Files */,
+			);
+			path = ShareSDK;
+			sourceTree = "<group>";
+		};
+		2E29DF4C1E95F07D000B9B9B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2E29DF551E95F07D000B9B9B /* Main.storyboard */,
+				2E29DF581E95F07D000B9B9B /* Assets.xcassets */,
+				2E29DF5A1E95F07D000B9B9B /* LaunchScreen.storyboard */,
+				2E29DF5D1E95F07D000B9B9B /* Info.plist */,
+				2E29DF4D1E95F07D000B9B9B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2E29DF651E95F07D000B9B9B /* ShareSDKTests */ = {
+			isa = PBXGroup;
+			children = (
+				2E29DF661E95F07D000B9B9B /* ShareSDKTests.m */,
+				2E29DF681E95F07D000B9B9B /* Info.plist */,
+			);
+			path = ShareSDKTests;
+			sourceTree = "<group>";
+		};
+		2E29DF701E95F07D000B9B9B /* ShareSDKUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2E29DF711E95F07D000B9B9B /* ShareSDKUITests.m */,
+				2E29DF731E95F07D000B9B9B /* Info.plist */,
+			);
+			path = ShareSDKUITests;
+			sourceTree = "<group>";
+		};
+		2E29DF961E961AE0000B9B9B /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2E9AB2E61E9DC8C80054E9C2 /* PayViewController.h */,
+				2E9AB2E71E9DC8C80054E9C2 /* PayViewController.m */,
+				2E9AB2E91E9DC8E20054E9C2 /* ShareViewController.h */,
+				2E9AB2EA1E9DC8E20054E9C2 /* ShareViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		2E29DF9B1E961BC9000B9B9B /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				2E29DF9C1E961BC9000B9B9B /* AppDelegate.h */,
+				2E29DF9D1E961BC9000B9B9B /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		2E29DF9F1E961CB9000B9B9B /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				2E29DFA01E961CB9000B9B9B /* CESHttpTool.h */,
+				2E29DFA11E961CB9000B9B9B /* CESHttpTool.m */,
+				2E29DFA21E961CB9000B9B9B /* NSDictionary+Json.h */,
+				2E29DFA31E961CB9000B9B9B /* NSDictionary+Json.m */,
+			);
+			path = Http;
+			sourceTree = "<group>";
+		};
+		2E29DFA91E961FCF000B9B9B /* PCH */ = {
+			isa = PBXGroup;
+			children = (
+				2E29DFAA1E961FF5000B9B9B /* ShareSDK.pch */,
+			);
+			path = PCH;
+			sourceTree = "<group>";
+		};
+		3067F59A7461C1A348619C7B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				698392BC37345B67B6F6FB6F /* libPods-ShareSDK.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6F2A23D389029D9E6EEA2B2A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				90C51B344583CDF80E498FB0 /* Pods-ShareSDK.debug.xcconfig */,
+				A516C737A0B7C3E9AB59C126 /* Pods-ShareSDK.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2E29DF481E95F07D000B9B9B /* ShareSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E29DF761E95F07D000B9B9B /* Build configuration list for PBXNativeTarget "ShareSDK" */;
+			buildPhases = (
+				9B2A7FA627D007E1E950196A /* [CP] Check Pods Manifest.lock */,
+				2E29DF451E95F07D000B9B9B /* Sources */,
+				2E29DF461E95F07D000B9B9B /* Frameworks */,
+				2E29DF471E95F07D000B9B9B /* Resources */,
+				28BC35A30392126E5CF5C57A /* [CP] Embed Pods Frameworks */,
+				45DA012E61FA2B8813153735 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShareSDK;
+			productName = ShareSDK;
+			productReference = 2E29DF491E95F07D000B9B9B /* ShareSDK.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2E29DF611E95F07D000B9B9B /* ShareSDKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E29DF791E95F07D000B9B9B /* Build configuration list for PBXNativeTarget "ShareSDKTests" */;
+			buildPhases = (
+				2E29DF5E1E95F07D000B9B9B /* Sources */,
+				2E29DF5F1E95F07D000B9B9B /* Frameworks */,
+				2E29DF601E95F07D000B9B9B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2E29DF641E95F07D000B9B9B /* PBXTargetDependency */,
+			);
+			name = ShareSDKTests;
+			productName = ShareSDKTests;
+			productReference = 2E29DF621E95F07D000B9B9B /* ShareSDKTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2E29DF6C1E95F07D000B9B9B /* ShareSDKUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E29DF7C1E95F07D000B9B9B /* Build configuration list for PBXNativeTarget "ShareSDKUITests" */;
+			buildPhases = (
+				2E29DF691E95F07D000B9B9B /* Sources */,
+				2E29DF6A1E95F07D000B9B9B /* Frameworks */,
+				2E29DF6B1E95F07D000B9B9B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2E29DF6F1E95F07D000B9B9B /* PBXTargetDependency */,
+			);
+			name = ShareSDKUITests;
+			productName = ShareSDKUITests;
+			productReference = 2E29DF6D1E95F07D000B9B9B /* ShareSDKUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2E29DF411E95F07D000B9B9B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = lujh;
+				TargetAttributes = {
+					2E29DF481E95F07D000B9B9B = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = X87UGUUQ2J;
+						ProvisioningStyle = Automatic;
+					};
+					2E29DF611E95F07D000B9B9B = {
+						CreatedOnToolsVersion = 8.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2E29DF481E95F07D000B9B9B;
+					};
+					2E29DF6C1E95F07D000B9B9B = {
+						CreatedOnToolsVersion = 8.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2E29DF481E95F07D000B9B9B;
+					};
+				};
+			};
+			buildConfigurationList = 2E29DF441E95F07D000B9B9B /* Build configuration list for PBXProject "ShareSDK" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2E29DF401E95F07D000B9B9B;
+			productRefGroup = 2E29DF4A1E95F07D000B9B9B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2E29DF481E95F07D000B9B9B /* ShareSDK */,
+				2E29DF611E95F07D000B9B9B /* ShareSDKTests */,
+				2E29DF6C1E95F07D000B9B9B /* ShareSDKUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2E29DF471E95F07D000B9B9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E29DF5C1E95F07D000B9B9B /* LaunchScreen.storyboard in Resources */,
+				2E29DF591E95F07D000B9B9B /* Assets.xcassets in Resources */,
+				2E29DF571E95F07D000B9B9B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E29DF601E95F07D000B9B9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E29DF6B1E95F07D000B9B9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		28BC35A30392126E5CF5C57A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ShareSDK/Pods-ShareSDK-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		45DA012E61FA2B8813153735 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ShareSDK/Pods-ShareSDK-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B2A7FA627D007E1E950196A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2E29DF451E95F07D000B9B9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E29DFA61E961D05000B9B9B /* CESHttpTool.m in Sources */,
+				2E9AB2E81E9DC8C80054E9C2 /* PayViewController.m in Sources */,
+				2E29DFA51E961CB9000B9B9B /* NSDictionary+Json.m in Sources */,
+				2E9AB2EB1E9DC8E20054E9C2 /* ShareViewController.m in Sources */,
+				2E07DCCF1ECD33B70087A9DC /* WXAPIManager.m in Sources */,
+				2E29DF9E1E961BC9000B9B9B /* AppDelegate.m in Sources */,
+				2E29DF4E1E95F07D000B9B9B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E29DF5E1E95F07D000B9B9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E29DF671E95F07D000B9B9B /* ShareSDKTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E29DF691E95F07D000B9B9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E29DF721E95F07D000B9B9B /* ShareSDKUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2E29DF641E95F07D000B9B9B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2E29DF481E95F07D000B9B9B /* ShareSDK */;
+			targetProxy = 2E29DF631E95F07D000B9B9B /* PBXContainerItemProxy */;
+		};
+		2E29DF6F1E95F07D000B9B9B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2E29DF481E95F07D000B9B9B /* ShareSDK */;
+			targetProxy = 2E29DF6E1E95F07D000B9B9B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2E29DF551E95F07D000B9B9B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E29DF561E95F07D000B9B9B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2E29DF5A1E95F07D000B9B9B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E29DF5B1E95F07D000B9B9B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2E29DF741E95F07D000B9B9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2E29DF751E95F07D000B9B9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2E29DF771E95F07D000B9B9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90C51B344583CDF80E498FB0 /* Pods-ShareSDK.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = X87UGUUQ2J;
+				ENABLE_BITCODE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/ShareSDK/PCH/ShareSDK.pch";
+				INFOPLIST_FILE = ShareSDK/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.strongunion.user.PocketShop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2E29DF781E95F07D000B9B9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A516C737A0B7C3E9AB59C126 /* Pods-ShareSDK.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = X87UGUUQ2J;
+				ENABLE_BITCODE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/ShareSDK/PCH/ShareSDK.pch";
+				INFOPLIST_FILE = ShareSDK/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.strongunion.user.PocketShop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2E29DF7A1E95F07D000B9B9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ShareSDKTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lujh.cn.ShareSDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShareSDK.app/ShareSDK";
+			};
+			name = Debug;
+		};
+		2E29DF7B1E95F07D000B9B9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ShareSDKTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lujh.cn.ShareSDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShareSDK.app/ShareSDK";
+			};
+			name = Release;
+		};
+		2E29DF7D1E95F07D000B9B9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ShareSDKUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lujh.cn.ShareSDKUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ShareSDK;
+			};
+			name = Debug;
+		};
+		2E29DF7E1E95F07D000B9B9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ShareSDKUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lujh.cn.ShareSDKUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ShareSDK;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2E29DF441E95F07D000B9B9B /* Build configuration list for PBXProject "ShareSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E29DF741E95F07D000B9B9B /* Debug */,
+				2E29DF751E95F07D000B9B9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E29DF761E95F07D000B9B9B /* Build configuration list for PBXNativeTarget "ShareSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E29DF771E95F07D000B9B9B /* Debug */,
+				2E29DF781E95F07D000B9B9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E29DF791E95F07D000B9B9B /* Build configuration list for PBXNativeTarget "ShareSDKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E29DF7A1E95F07D000B9B9B /* Debug */,
+				2E29DF7B1E95F07D000B9B9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E29DF7C1E95F07D000B9B9B /* Build configuration list for PBXNativeTarget "ShareSDKUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E29DF7D1E95F07D000B9B9B /* Debug */,
+				2E29DF7E1E95F07D000B9B9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2E29DF411E95F07D000B9B9B /* Project object */;
+}
